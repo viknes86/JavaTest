@@ -9,6 +9,7 @@ public class Main {
         numbers.insert(50);
         numbers.insert(50);
         numbers.insert(50);
+        numbers.removeAt(1);
       
         numbers.print();
     

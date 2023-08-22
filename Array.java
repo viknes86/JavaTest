@@ -26,6 +26,20 @@ if (items.length == count){
     count++;
 }
 
+public void removeAt(int index){
+    //Validatet the index
+    if (index < 0 || index >= count){
+    throw new IllegalArgumentException();
+    }
+    //Shift the items to left to fill the whole
+    for (int i = index; i < count-1; i++){
+     items[i] = items[i+1];
+     
+    }
+items[count-1] = 0;    
+count--;
+}
+
 public void print(){
     for (int i = 0; i < items.length; i++)
     System.out.println(items[i]);
