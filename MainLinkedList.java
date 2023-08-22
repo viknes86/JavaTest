@@ -1,12 +1,14 @@
 import java.util.LinkedList;
 
-public class MainLInkedList {
-    LinkedList List = new LinkedList();
-    List.addLast(10);
-    List.addLast(20);
-    List.addLast(30);
-    List.addFirst(33);
+public class MainLinkedList {
+    public static void main(String[] args){
 
-    System.out.println(List);
+    LinkedList<Integer> ll = new LinkedList<>();
+    ll.addLast(10);
+    ll.addLast(20);
+    ll.addLast(30);
+    ll.addFirst(33);
 
+    System.out.println(ll);
+    }
 }
