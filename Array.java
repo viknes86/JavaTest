@@ -40,6 +40,21 @@ items[count-1] = 0;
 count--;
 }
 
+public int indexOf(int item){
+
+ for (int i = 0; i < count; i++)
+ {
+    if (items[i] == item)
+    {
+        return i;
+    }
+
+   
+ }
+ return -1;
+ 
+}
+
 public void print(){
     for (int i = 0; i < items.length; i++)
     System.out.println(items[i]);
